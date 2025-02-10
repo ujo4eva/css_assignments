@@ -1,0 +1,63 @@
+body, html {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background-color: rgb(180, 180, 224);
+    padding: 15%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    background-color: #f8f2bd; /* Yellow from the image */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.content {
+    padding: 15px;
+    background-color: #fff; /* White background for content */
+    border-radius: 0 0 10px 10px;
+}
+
+.content h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.series4 {
+    color: gray;
+    font-size: medium;
+}
+
+.content p {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
