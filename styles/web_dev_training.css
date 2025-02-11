@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    color: #1a2a3a;
+}
+
+p {
+    color: #5a6a7a;
+}
+
+.form-container {
+    flex: 1;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1a2a3a;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d0d8d7;
+    border-radius: 4px;
+}
+
+.form-group input:focus, .form-group select:focus {
+    outline: none;
+    border-color: #00bfa5;
+}
+
+.register-button {
+    background-color: #00bfa5;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-button:hover {
+    background-color: #009688;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .content, .form-container {
+        max-width: 100%;
+    }
+}
