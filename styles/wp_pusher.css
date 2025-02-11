@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+header nav .account {
+    border: 1px solid #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.checkout-form, .plan-info {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.checkout-form {
+    flex: 1;
+    max-width: 400px;
+}
+
+.checkout-form h2 {
+    color: #1a2a3a;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    color: #1a2a3a;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d0d8d7;
+    border-radius: 4px;
+}
+
+.form-group input::placeholder {
+    color: #b0b8b7;
+}
+
+.buy-button {
+    background-color: #00bfa5;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.buy-button:hover {
+    background-color: #009688;
+}
+
+.help-text, .powered-by {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.help-text a, .powered-by a {
+    color: #00bfa5;
+}
+
+.plan-info {
+    flex: 1;
+    max-width: 300px;
+    background-color: #007bff;
+    color: white;
+}
+
+.plan-info h3 {
+    font-size: 24px;
+}
+
+.plan-info .price {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.plan-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan-info ul li {
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.plan-info ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+}
+
+.plan-info p {
+    margin: 10px 0;
+}
+
+.plan-info a {
+    color: white;
+    text-decoration: underline;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer a {
+    color: #00bfa5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .checkout-form, .plan-info {
+        max-width: 100%;
+    }
+}
